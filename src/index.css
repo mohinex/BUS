@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Hind Siliguri', 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  
+  --color-primary-blue: #0E72C8;
+  --color-dark-blue: #0A4E9E;
+  --color-light-blue: #39A0FF;
+  --color-brand-green: #15803D;
+  --color-dark-text: #0F172A;
+  --color-accent-gold: #F59E0B;
+}
+
+@layer base {
+  body {
+    background-color: #F8FAFC;
+    color: #0F172A;
+    font-size: 16px;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* Custom classes for premium UI */
+.bg-gradient-official {
+  background: linear-gradient(135deg, #0A4E9E 0%, #0E72C8 60%, #39A0FF 100%);
+}
+
+.text-shadow-official {
+  text-shadow: 2px 2px 4px rgba(10, 78, 158, 0.8), -1px -1px 0px #0A4E9E, 1px -1px 0px #0A4E9E, -1px 1px 0px #0A4E9E, 1px 1px 0px #0A4E9E;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.glass-dark {
+  background: rgba(10, 78, 158, 0.15);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo-leaf-glow {
+  filter: drop-shadow(0 0 8px rgba(21, 128, 61, 0.5));
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.02); }
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 3s infinite ease-in-out;
+}

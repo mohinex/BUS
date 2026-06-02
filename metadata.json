@@ -1,0 +1,10 @@
+{
+  "name": "Remix: Baliakandi Upazila Samiti Dhaka",
+  "description": "official community portal and member directory of Baliakandi Upazila Samity Dhaka, Bangladesh. A premium full-stack platform managing member registrations, event RSVPs, executive committees, donations, and digital membership ID cards.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
